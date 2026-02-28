@@ -1,7 +1,9 @@
 import { useState } from 'react';
-import './App.css';
+
 import { Waka } from './components/Waka';
-import { wakaData } from './data/wakaData';
+import wakaData from './data/wakaData.json';
+
+import './App.css';
 
 const getRandomWaka = (currentId) => {
   const filtered = wakaData.filter((w) => w.id !== currentId);
